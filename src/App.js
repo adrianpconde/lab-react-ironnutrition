@@ -9,7 +9,7 @@ function App() {
       <Divider>Food List</Divider>
       <Row style={{ width: '100%', justifyContent: 'center' }}>
         {foods.map((food) => (
-          <FoodBox {...food} />
+          <FoodBox key={food.name} {...food} />
         ))}
       </Row>{' '}
     </div>
